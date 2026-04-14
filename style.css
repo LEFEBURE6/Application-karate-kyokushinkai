@@ -1,121 +1,77 @@
-body {
-  background-color: rgb(149, 194, 149);
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-h1 {
-  color: #003939;
-  font-size: 28px;
-  text-align: center;
-  font-style: italic;
-}
+const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    backgroundColor: "rgb(149,194,149)",
+    paddingTop: 20,
+    alignItems: "center",
+  },
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-h2 {
-  font-size: 25px;
-}
-h2 {
-  color: rgb(130, 100, 58);
-  text-align: center;
-  margin-top: 65px;
-  margin-bottom: 40px; /* augmente l’espace sous le titre */
-}
+  title: {
+    color: "#003939",
+    fontSize: 28,
+    textAlign: "center",
+    fontStyle: "italic",
+    fontFamily: "Poppins",
+  },
 
-.kyu10 a {
-  background-color: rgb(194, 114, 58);
-}
+  subtitle: {
+    fontSize: 25,
+    color: "rgb(130,100,58)",
+    textAlign: "center",
+    marginTop: 65,
+    marginBottom: 40,
+  },
 
-.kyu9 a {
-  background-color: rgb(194, 114, 58);
-}
+  kyuButton: {
+    width: 250,
+    paddingVertical: 10,
+    marginVertical: 4,
+    borderWidth: 1,
+    borderColor: "black",
+    borderRadius: 6,
+    alignItems: "center",
+  },
 
-.kyu8 a {
-  background-color: rgb(77, 77, 187);
-}
+  kyuText: {
+    fontSize: 20,
+    fontFamily: "Poppins",
+    color: "black",
+  },
 
-.kyu7 a {
-  background-color: rgb(77, 77, 187);
-}
+  // Couleurs des ceintures
+  kyu10: { backgroundColor: "rgb(194,114,58)" },
+  kyu9: { backgroundColor: "rgb(194,114,58)" },
+  kyu8: { backgroundColor: "rgb(77,77,187)" },
+  kyu7: { backgroundColor: "rgb(77,77,187)" },
+  kyu6: { backgroundColor: "rgb(211,211,46)" },
+  kyu5: { backgroundColor: "rgb(211,211,46)" },
+  kyu4: { backgroundColor: "rgb(54,150,54)" },
+  kyu3: { backgroundColor: "rgb(54,150,54)" },
+  kyu2: { backgroundColor: "rgb(138,57,57)" },
+  kyu1: { backgroundColor: "rgb(138,57,57)" },
 
-.kyu6 a {
-  background-color: rgb(211, 211, 46);
-}
+  shodan: {
+    backgroundColor: "black",
+  },
+  shodanText: {
+    color: "yellow",
+    fontSize: 20,
+    fontFamily: "Poppins",
+  },
 
-.kyu5 a {
-  background-color: rgb(211, 211, 46);
-}
+  logoTop: {
+    width: 120,
+    height: 120,
+    resizeMode: "contain",
+    position: "absolute",
+    top: -40,
+    right: -20,
+  },
 
-.kyu4 a {
-  background-color: rgb(54, 150, 54);
-}
-
-.kyu3 a {
-  background-color: rgb(54, 150, 54);
-}
-
-.kyu2 a {
-  background-color: rgb(138, 57, 57);
-}
-
-.kyu1 a {
-  background-color: rgb(138, 57, 57);
-}
-
-.liste-kyu .shodan a {
-  background-color: black;
-
-  font-size: 20px;
-  font-family:"Poppins", sans-serif;
-  color: yellow;
-  display: block; /* donne une largeur uniforme */
-  width: 250px; /* même longueur pour toutes les ceintures */
-}
-.liste-kyu a {
-  display: block; /* donne une largeur uniforme */
-  width: 250px; /* même longueur pour toutes les ceintures */
-
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-  border: 0.1px solid black;
-  font-size: 20px;
-  font-family:;
-  padding: 0.5px 10px; /* padding réduit */
-  margin: 2px auto; /* espace réduit entre les ceintures */
-}
-.liste-kyu {
-  list-style: none; /* enlève les points */
-  padding: 0;
-  margin: 0;
-}
-
-.liste-kyu li {
-  list-style: none; /* sécurité supplémentaire */
-}
-.liste-kyu {
-  margin-left: 0px; /* décale tout le bloc vers la droite */
-}
-
-#logo img {
-  position: absolute;
-  top: -180px;
-  right: -40px;
-  width: 155px;
-
-  transform: scale(0.3);
-}
-
-#logokyokushin {
-  text-align: center;
-  margin-top: 30px; /* ajuste comme tu veux */
-}
-
-#logokyokushin img {
-  width: 20vw; /* 20% de la largeur de l’écran */
-  max-width: 255px; /* ne dépasse jamais 255px */
-  min-width: 170px; /* reste lisible sur mobile */
-  height: auto; /* garde les proportions */
-}
+  logoBottom: {
+    width: 200,
+    height: 200,
+    resizeMode: "contain",
+    marginTop: 30,
+  },
+});
